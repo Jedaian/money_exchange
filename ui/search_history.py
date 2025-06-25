@@ -1,5 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QFormLayout, QLineEdit, QPushButton, QComboBox, QTableWidget, QTableWidgetItem, QLabel, QMessageBox, QHeaderView
-from PyQt6.QtCore import QDate
+from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QFormLayout, QLineEdit, QPushButton, QComboBox, QTableWidget, QTableWidgetItem, QLabel, QMessageBox, QHeaderView
 import sys, os
 import sqlite3
 from datetime import datetime, timedelta

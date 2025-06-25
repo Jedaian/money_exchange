@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout, QDateEdit, QDoubleSpinBox
+from PyQt6.QtWidgets import QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout
 from PyQt6.QtCore import QDate
 import sys
 import os
@@ -21,7 +21,7 @@ class PurchaseForm(QWidget):
         layout.addRow('NIK', self.nik_input)
         layout.addRow('Jumlah Transaksi (Rupiah)', self.jumlah_rupiah_input)
 
-        self.submit_button = QPushButton('save')
+        self.submit_button = QPushButton('Save')
         self.submit_button.clicked.connect(self.save_customer)
 
         vbox = QVBoxLayout()
