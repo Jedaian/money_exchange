@@ -1,5 +1,6 @@
-from PyQt6.QtWidgets import QLabel, QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout, QDateEdit
-from PyQt6.QtCore import QDate
+from PyQt6.QtWidgets import (QHBoxLayout, QLabel, QApplication, QWidget, QFormLayout, QLineEdit, 
+                             QPushButton, QMessageBox, QVBoxLayout, QDateEdit)
+from PyQt6.QtCore import QDate, Qt
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -10,8 +11,6 @@ class CustomerForm(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Customer Entry Form")
-
-        layout = QFormLayout()
 
         self.label = QLabel("Input Data Customer")
         self.label.setStyleSheet("font-size: 20px; font-weight: bold; margin: 10px")
@@ -38,23 +37,36 @@ class CustomerForm(QWidget):
 
         self.npwp_input = QLineEdit()
         self.npwp_input.setMinimumWidth(200)
+        
+        form_layout = QFormLayout()
+        form_layout.addRow(self.label)
+        form_layout.addRow('Nama', self.name_input)
+        form_layout.addRow('NIK', self.nik_input)
+        form_layout.addRow('Tempat Lahir', self.tempat_lahir_input)
+        form_layout.addRow('Tanggal Lahir', self.tanggal_lahir_input)
+        form_layout.addRow('Tempat Tinggal', self.alamat_input)
+        form_layout.addRow('Nomor Handphone', self.no_telp_input)
+        form_layout.addRow('No NPWP', self.npwp_input)
 
-        layout.addRow(self.label)
-        layout.addRow('Nama', self.name_input)
-        layout.addRow('NIK', self.nik_input)
-        layout.addRow('Tempat Lahir', self.tempat_lahir_input)
-        layout.addRow('Tanggal Lahir', self.tanggal_lahir_input)
-        layout.addRow('Tempat Tinggal', self.alamat_input)
-        layout.addRow('Nomor Handphone', self.no_telp_input)
-        layout.addRow('No NPWP', self.npwp_input)
+        form_wrapper = QWidget()
+        form_wrapper.setLayout(form_layout)
+
+        centered_form_layout = QHBoxLayout()
+        centered_form_layout.addStretch()
+        centered_form_layout.addWidget(form_wrapper)
+        centered_form_layout.addStretch()
 
         self.submit_button = QPushButton('Save')
         self.submit_button.clicked.connect(self.save_customer)
 
-        vbox = QVBoxLayout()
-        vbox.addLayout(layout)
-        vbox.addWidget(self.submit_button)
-        self.setLayout(vbox)
+        main_layout = QVBoxLayout()
+        main_layout.addSpacing(20)
+        main_layout.addLayout(centered_form_layout)
+        main_layout.addWidget(self.submit_button, alignment=Qt.AlignmentFlag.AlignCenter)
+        main_layout.addStretch()
+        main_layout.setContentsMargins(40, 20, 40, 20)
+        main_layout.setSpacing(15)
+        self.setLayout(main_layout)
     
     def save_customer(self):
         name = self.name_input.text().strip()
@@ -79,7 +91,7 @@ class CustomerForm(QWidget):
             cursor = conn.cursor()
 
             #Check NIK
-            cursor.execute("SELECT * FROM customers WHERE nik = ?", (nik))
+            cursor.execute("SELECT * FROM customers WHERE nik = ?", (nik, ))
             if cursor.fetchone():
                 QMessageBox.warning(self, 'Data Duplikat', 'Data Customer dengan NIK ini sudah ada.')
                 conn.close()

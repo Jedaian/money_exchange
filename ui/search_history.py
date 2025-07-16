@@ -1,6 +1,6 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QFormLayout, QLineEdit, QPushButton, QComboBox, QTableWidget, QTableWidgetItem, QLabel, QMessageBox, QHeaderView
+from PyQt6.QtWidgets import (QApplication, QWidget, QHBoxLayout, QVBoxLayout, QFormLayout, QLineEdit, QPushButton, QComboBox, 
+                             QTableWidget, QTableWidgetItem, QLabel, QMessageBox, QHeaderView)
 import sys, os
-import sqlite3
 from datetime import datetime, timedelta
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -10,10 +10,6 @@ class SearchHistory(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Cari Riwayat Transaksi")
-
-        layout = QVBoxLayout()
-
-        form_layout = QFormLayout()
 
         self.label = QLabel("Search Data Transaksi")
         self.label.setStyleSheet("font-size: 20px; font-weight: bold; margin: 10px")
@@ -27,10 +23,19 @@ class SearchHistory(QWidget):
         self.range_combo = QComboBox()
         self.range_combo.addItems(["Bulan ini", "3 Bulan terakhir", "6 Bulan terakhir", "1 tahun terakhir"])
 
+        form_layout = QFormLayout()
         form_layout.addRow(self.label)
         form_layout.addRow('Nama', self.name_input)
         form_layout.addRow('NIK', self.nik_input)
         form_layout.addRow('Periode', self.range_combo)
+
+        form_widget = QWidget()
+        form_widget.setLayout(form_layout)
+
+        centered_form_layout = QHBoxLayout()
+        centered_form_layout.addStretch()
+        centered_form_layout.addWidget(form_widget)
+        centered_form_layout.addStretch()
 
         self.search_button = QPushButton('Cari')
         self.search_button.clicked.connect(self.search)
@@ -40,15 +45,21 @@ class SearchHistory(QWidget):
         self.result_table.setHorizontalHeaderLabels(['Tanggal Transaksi', 'Jumlah Transaksi (Rp)'])
         self.result_table.horizontalHeader().setStretchLastSection(True)
         self.result_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.result_table.verticalHeader().setVisible(False)
 
         self.total_label = QLabel('Total: Rp 0')
+        self.total_label.setStyleSheet("font-weight: bold; margin-top: 5px")
+        
+        main_layout = QVBoxLayout()
+        main_layout.addLayout(centered_form_layout)
+        main_layout.addWidget(self.search_button)
+        main_layout.addWidget(self.result_table)
+        main_layout.addWidget(self.total_label)
+        main_layout.addStretch()
+        main_layout.setContentsMargins(40, 20, 40, 20)
+        main_layout.setSpacing(15)
 
-        layout.addLayout(form_layout)
-        layout.addWidget(self.search_button)
-        layout.addWidget(self.result_table)
-        layout.addWidget(self.total_label)
-
-        self.setLayout(layout)
+        self.setLayout(main_layout)
 
     def search(self):
         name = self.name_input.text().strip()
@@ -76,15 +87,23 @@ class SearchHistory(QWidget):
         try:
             conn = get_connection()
             cursor = conn.cursor()
-            start_date_str = start_date.strftime('%Y-%m-%d')
 
+            cursor.execute("SELECT * FROM customers WHERE nik = ?", (nik, ))
+            if cursor.fetchone() is None:
+                QMessageBox.warning(self, "NIK tidak ditemukan", "NIK yang Anda masukkan tidak terdaftar")
+                self.result_table.setRowCount(0)
+                self.total_label.setText("Total Rp. 0")
+                conn.close()
+                return
+
+            start_date_str = start_date.strftime("%Y-%m-%d")
             partial_name = f'%{name}%'
             cursor.execute("""
             SELECT tanggal_transaksi, jumlah_rupiah
             FROM purchase_history
             WHERE nama LIKE ? AND nik = ? AND tanggal_transaksi >= ?
             ORDER BY tanggal_transaksi ASC
-                           """, (partial_name, nik, start_date_str))
+            """, (partial_name, nik, start_date_str))
             
             records = cursor.fetchall()
             conn.close()
@@ -97,8 +116,15 @@ class SearchHistory(QWidget):
             
             self.result_table.setRowCount(len(records))
             total = 0
+            
             for i, (tanggal, jumlah) in enumerate(records):
-                self.result_table.setItem(i, 0, QTableWidgetItem(tanggal))
+                try:
+                    tanggal_obj = datetime.strptime(tanggal, '%Y-%m-%d')
+                    tanggal_formatted = tanggal_obj.strftime('%-d %B %Y')
+                except:
+                    tanggal_formatted = tanggal
+    
+                self.result_table.setItem(i, 0, QTableWidgetItem(tanggal_formatted))
                 self.result_table.setItem(i, 1, QTableWidgetItem(f'Rp. {int(jumlah):,}'))
                 total += jumlah
             

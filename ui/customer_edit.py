@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout
+from PyQt6.QtWidgets import (QLabel, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QHBoxLayout, QVBoxLayout)
 from db import get_connection
 
 class CustomerEditForm(QWidget):
@@ -7,29 +7,58 @@ class CustomerEditForm(QWidget):
         self.nik = nik
         self.refresh_callback = refresh_callback
         self.setWindowTitle("Edit Data Customer")
-        self.setGeometry(200, 200, 400, 300)
+        self.setMinimumWidth(500)
 
-        layout = QFormLayout()
+        self.label = QLabel("Edit Data Customer")
+        self.label.setStyleSheet("font-size: 20px; font-weight: boldl; margin: 10px")
 
         self.name_input = QLineEdit()
-        self.ttl_input = QLineEdit()
-        self.alamat_input = QLineEdit()
-        self.no_telp_input = QLineEdit()
-        self.npwp_input = QLineEdit()
+        self.name_input.setMinimumWidth(300)
 
-        layout.addRow("Nama", self.name_input)
-        layout.addRow("Tempat & Tanggal Lahir", self.ttl_input)
-        layout.addRow("Alamat", self.alamat_input)
-        layout.addRow("No HP", self.no_telp_input)
-        layout.addRow("NPWP", self.npwp_input)
+        self.tempat_lahir_input = QLineEdit()
+        self.tempat_lahir_input.setMinimumWidth(140)
+
+        self.tanggal_lahir_input = QLineEdit()
+        self.tanggal_lahir_input.setMinimumWidth(140)
+        self.tanggal_lahir_input.setPlaceholderText("yyyy-mm-dd")
+
+        ttl_layout = QHBoxLayout()
+        ttl_layout.addWidget(self.tempat_lahir_input)
+        ttl_layout.addWidget(self.tanggal_lahir_input)
+
+        self.alamat_input = QLineEdit()
+        self.alamat_input.setMinimumWidth(300)
+
+        self.no_telp_input = QLineEdit()
+        self.no_telp_input.setMinimumWidth(300)
+
+        self.npwp_input = QLineEdit()
+        self.npwp_input.setMinimumWidth(300)
+
+        form_layout = QFormLayout()
+        form_layout.addRow(self.label)
+        form_layout.addRow("Nama", self.name_input)
+        form_layout.addRow("Tempat & Tanggal Lahir", ttl_layout)
+        form_layout.addRow("Alamat", self.alamat_input)
+        form_layout.addRow("No HP", self.no_telp_input)
+        form_layout.addRow("NPWP", self.npwp_input)
 
         self.save_button = QPushButton("Simpan")
         self.save_button.clicked.connect(self.save_changes)
 
-        vbox = QVBoxLayout()
-        vbox.addLayout(layout)
-        vbox.addWidget(self.save_button)
-        self.setLayout(vbox)
+        self.back_button = QPushButton("Kembali")
+        self.back_button.clicked.connect(self.close)
+
+        button_layout = QHBoxLayout()
+        button_layout.addStretch()
+        button_layout.addWidget(self.back_button)
+        button_layout.addWidget(self.save_button)
+
+        main_layout = QVBoxLayout()
+        main_layout.addLayout(form_layout)
+        main_layout.addSpacing(20)
+        main_layout.addLayout(button_layout)
+        self.setLayout(main_layout)
 
         self.load_customer_data()
 
@@ -42,7 +71,13 @@ class CustomerEditForm(QWidget):
 
         if customer:
             self.name_input.setText(customer[0])
-            self.ttl_input.setText(customer[1])
+            if customer[1] and ',' in customer[1]:
+                tempat, tanggal = customer[1].split(',', 1)
+                self.tempat_lahir_input.setText(tempat.strip())
+                self.tanggal_lahir_input.setText(tanggal.strip())
+            else:
+                self.tempat_lahir_input.setText(customer[1] or "")
+                self.tanggal_lahir_input.setText("")
             self.alamat_input.setText(customer[2])
             self.no_telp_input.setText(customer[3])
             self.npwp_input.setText(customer[4] if customer[4] else "")

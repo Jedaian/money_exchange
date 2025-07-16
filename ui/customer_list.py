@@ -1,45 +1,54 @@
-from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QLineEdit, QTableWidget, QTableWidgetItem, QPushButton, QLabel, QMessageBox)
+from PyQt6.QtWidgets import (QWidget, QHBoxLayout, QHeaderView, QVBoxLayout, QLineEdit, QTableWidget, 
+                             QTableWidgetItem, QPushButton, QLabel, QMessageBox)
 from db import get_connection
 from ui.customer_edit import CustomerEditForm
 
 class CustomerList(QWidget):
-    def __init__(self, go_back_callback):
+    def __init__(self):
         super().__init__()
-        self.go_back_callback = go_back_callback
         self.setWindowTitle("Customer List")
-
-        layout = QVBoxLayout()
+        self.setMinimumWidth(900)
 
         title = QLabel("Daftar Seluruh Customer")
         title.setStyleSheet("font-size: 18px; font-weight: bold;")
-        layout.addWidget(title)
 
         self.search_input = QLineEdit()
         self.search_input.setPlaceholderText("Cari nama atau NIK")
+        self.search_input.setMinimumWidth(300)
         self.search_input.textChanged.connect(self.filter_table)
-        layout.addWidget(self.search_input)
+
+        self.refresh_button = QPushButton("Refresh")
+        self.refresh_button.clicked.connect(self.load_data)
+
+        top_layout = QHBoxLayout()
+        top_layout.addWidget(title)
+        top_layout.addStretch()
+        top_layout.addWidget(self.refresh_button)
 
         self.table = QTableWidget()
         self.table.setColumnCount(8)
         self.table.setHorizontalHeaderLabels([
-            "Nama", "NIK", "Tempat & Tanggal Lahir", "Alamat", "No Telp", "NPWP", "" , ""
+            "Nama", "NIK", "Tempat & \nTanggal Lahir", 
+            "Alamat", "No Telp", "NPWP", "Edit" , "Delete"
         ])
-        layout.addWidget(self.table)
+        self.table.horizontalHeader().setStretchLastSection(True)
+        self.table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.table.verticalHeader().setVisible(False)
+        self.table.setStyleSheet("font-size: 14px")
 
-        self.refresh_button = QPushButton("Refresh")
-        self.refresh_button.clicked.connect(self.load_data)
-        layout.addWidget(self.refresh_button)
+        main_layout = QVBoxLayout()
+        main_layout.addLayout(top_layout)
+        main_layout.addWidget(self.search_input)
+        main_layout.addWidget(self.table)
+        
 
-        self.back_button = QPushButton("Kembali")
-        self.back_button.clicked.connect(self.go_back_callback)
-        layout.addWidget(self.back_button)
-
-        self.setLayout(layout)
+        self.setLayout(main_layout)
         self.load_data()
 
     def load_data(self):
         conn = get_connection()
         cursor = conn.cursor()
+        cursor.execute("PRAGMA foreign_key = ON")
         cursor.execute("SELECT nama, nik, tempat_tanggal_lahir, alamat, no_telp, npwp FROM customers")
         self.customer_data = cursor.fetchall()
         conn.close()

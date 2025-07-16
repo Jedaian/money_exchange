@@ -1,5 +1,6 @@
-from PyQt6.QtWidgets import QLabel, QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout
-from PyQt6.QtCore import QDate
+from PyQt6.QtWidgets import (QLabel, QApplication, QWidget, QFormLayout, QLineEdit, 
+                             QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout)
+from PyQt6.QtCore import QDate, Qt
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -10,8 +11,6 @@ class PurchaseForm(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Purchase Form')
-
-        layout = QFormLayout()
 
         self.label = QLabel("Input Data Transaksi")
         self.label.setStyleSheet("font-size: 20px; font-weight: bold; margin: 10px")
@@ -24,19 +23,33 @@ class PurchaseForm(QWidget):
 
         self.jumlah_rupiah_input = QLineEdit()
         self.jumlah_rupiah_input.setMinimumWidth(200)
-        
-        layout.addRow(self.label)
-        layout.addRow('Nama', self.name_input)
-        layout.addRow('NIK', self.nik_input)
-        layout.addRow('Jumlah Transaksi (Rupiah)', self.jumlah_rupiah_input)
+
+        form_layout = QFormLayout()
+        form_layout.addRow(self.label)
+        form_layout.addRow('Nama', self.name_input)
+        form_layout.addRow('NIK', self.nik_input)
+        form_layout.addRow('Jumlah Transaksi (Rupiah)', self.jumlah_rupiah_input)
+
+        form_wrapper = QWidget()
+        form_wrapper.setLayout(form_layout)
+
+        centered_form_layout = QHBoxLayout()
+        centered_form_layout.addStretch()
+        centered_form_layout.addWidget(form_wrapper)
+        centered_form_layout.addStretch()
 
         self.submit_button = QPushButton('Save')
         self.submit_button.clicked.connect(self.save_customer)
 
-        vbox = QVBoxLayout()
-        vbox.addLayout(layout)
-        vbox.addWidget(self.submit_button)
-        self.setLayout(vbox)
+        main_layout = QVBoxLayout()
+        main_layout.addSpacing(20)
+        main_layout.addLayout(centered_form_layout)
+        main_layout.addWidget(self.submit_button, alignment = Qt.AlignmentFlag.AlignCenter)
+        main_layout.addStretch()
+        main_layout.setContentsMargins(40, 20, 40, 20)
+        main_layout.setSpacing(15)
+
+        self.setLayout(main_layout)
     
     def save_customer(self):
         name = self.name_input.text().strip()
@@ -62,7 +75,7 @@ class PurchaseForm(QWidget):
                 return
             
             print(customer)
-            full_name = customer[0]
+            full_name = customer[2]
 
             confirmation_message = (
                 f'Apakah data berikut sudah benar ?\n\n'

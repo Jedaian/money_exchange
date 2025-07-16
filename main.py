@@ -1,15 +1,18 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QStackedWidget
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QStackedWidget)
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon
 import os
 import sys
 
+from utils import resource_path
 from ui.customer_form import CustomerForm
 from ui.purchase_form import PurchaseForm
 from ui.search_history import SearchHistory
 from ui.customer_list import CustomerList
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowIcon(QIcon(resource_path("assets/icon.ico")))
         self.setWindowTitle('Aplikasi Money Exchange')
         self.setMinimumSize(900, 600)
 
@@ -23,38 +26,25 @@ class MainWindow(QMainWindow):
 
         self.label = QLabel("Selamat datang di Aplikasi Money Exchange")
         self.label.setStyleSheet("font-size: 24px; font-weight: bold; margin: 20px")
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.customer_btn = QPushButton('Form Input Customer')
-        self.customer_btn.clicked.connect(self.show_customer_form)
-
-        self.purchase_btn = QPushButton('Form Input Transaksi')
-        self.purchase_btn.clicked.connect(self.show_purchase_form)
-
-        self.history_btn = QPushButton('Cari Riwayat Transaksi')
-        self.history_btn.clicked.connect(self.show_search_form)
-
-        self.customer_list_btn = QPushButton('Lihat Daftar Customer')
-        self.customer_list_btn.clicked.connect(self.show_customer_list)
-
-        self.quit_btn = QPushButton('Keluar')
-        self.quit_btn.clicked.connect(self.close)
-
-        for btn in [self.customer_btn, self.purchase_btn,self.customer_list_btn, self.history_btn, self.quit_btn]:
-            btn.setStyleSheet('padding: 10px; font-size: 18px')
-        
-        self.menu_layout.addWidget(self.label)
-        self.menu_layout.addWidget(self.customer_btn)
-        self.menu_layout.addWidget(self.purchase_btn)
-        self.menu_layout.addWidget(self.history_btn)
-        self.menu_layout.addWidget(self.customer_list_btn)
         self.menu_layout.addStretch()
-        self.menu_layout.addWidget(self.quit_btn)
+        self.menu_layout.addWidget(self.label)
+
+        self.menu_layout.addLayout(self.centered_button("Form Input Customer", self.show_customer_form))
+        self.menu_layout.addLayout(self.centered_button("Form Input Transaksi", self.show_purchase_form))
+        self.menu_layout.addLayout(self.centered_button("Cari Riwayat Transaksi", self.show_search_form))
+        self.menu_layout.addLayout(self.centered_button("Lihat Daftar Customer", self.show_customer_list))
+        self.menu_layout.addStretch()
+        self.menu_layout.addLayout(self.centered_button("Keluar", self.close))
+
+
         self.menu_widget.setLayout(self.menu_layout)
 
         self.customer_form = CustomerForm()
         self.purchase_form = PurchaseForm()
         self.search_form = SearchHistory()
-        self.customer_list = CustomerList(self.go_to_menu)
+        self.customer_list = CustomerList()
 
         self.add_back_button(self.customer_form)
         self.add_back_button(self.purchase_form)
@@ -71,13 +61,22 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.stack)
         self.central_widget.setLayout(main_layout)
 
+    def centered_button(self, text, on_click_callback):
+        button = QPushButton(text)
+        button.setFixedWidth(300)
+        button.setStyleSheet('padding: 10px; font-size: 18px')
+        button.clicked.connect(on_click_callback)
+
+        hbox = QHBoxLayout()
+        hbox.addStretch()
+        hbox.addWidget(button)
+        hbox.addStretch()
+        return hbox
+    
     def add_back_button(self, widget):
-        back_btn = QPushButton('Kembali ke menu')
-        back_btn.setStyleSheet('padding: 8px; font-size: 16px')
-        back_btn.clicked.connect(self.go_to_menu)
         layout = widget.layout()
         if layout is not None:
-            layout.addWidget(back_btn)
+            layout.addLayout(self.centered_button("Kembali ke menu", self.go_to_menu))
 
     def show_customer_form(self):
         self.stack.setCurrentWidget(self.customer_form)
