@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout, QDateEdit
+from PyQt6.QtWidgets import QLabel, QApplication, QWidget, QFormLayout, QLineEdit, QPushButton, QMessageBox, QVBoxLayout, QDateEdit
 from PyQt6.QtCore import QDate
 import sys
 import os
@@ -13,17 +13,33 @@ class CustomerForm(QWidget):
 
         layout = QFormLayout()
 
+        self.label = QLabel("Input Data Customer")
+        self.label.setStyleSheet("font-size: 20px; font-weight: bold; margin: 10px")
+
         self.name_input = QLineEdit()
+        self.name_input.setMinimumWidth(200)
+
         self.nik_input = QLineEdit()
+        self.nik_input.setMinimumWidth(200)
+
         self.tempat_lahir_input = QLineEdit()
+        self.tempat_lahir_input.setMinimumWidth(200)
+
         self.tanggal_lahir_input = QDateEdit()
         self.tanggal_lahir_input.setCalendarPopup(True)
         self.tanggal_lahir_input.setDisplayFormat('yyyy-MM-dd')
         self.tanggal_lahir_input.setDate(QDate.currentDate())
-        self.alamat_input = QLineEdit()
-        self.no_telp_input = QLineEdit()
-        self.npwp_input = QLineEdit()
 
+        self.alamat_input = QLineEdit()
+        self.alamat_input.setMinimumWidth(200)
+
+        self.no_telp_input = QLineEdit()
+        self.no_telp_input.setMinimumWidth(200)
+
+        self.npwp_input = QLineEdit()
+        self.npwp_input.setMinimumWidth(200)
+
+        layout.addRow(self.label)
         layout.addRow('Nama', self.name_input)
         layout.addRow('NIK', self.nik_input)
         layout.addRow('Tempat Lahir', self.tempat_lahir_input)
@@ -63,12 +79,29 @@ class CustomerForm(QWidget):
             cursor = conn.cursor()
 
             #Check NIK
-            cursor.execute("SELECT * FROM customers WHERE nik = ?", (nik,))
+            cursor.execute("SELECT * FROM customers WHERE nik = ?", (nik))
             if cursor.fetchone():
                 QMessageBox.warning(self, 'Data Duplikat', 'Data Customer dengan NIK ini sudah ada.')
                 conn.close()
                 return
             
+            confirmation_message = (
+                f'Apakah data berikut sudah benar ?\n\n'
+                f'Nama: {name}\n'
+                f'NIK: {nik}\n'
+                f'Tempat & Tanggal Lahir: {ttl}\n'
+                f'Alamat: {alamat}\n'
+                f'No Telp: {no_telp}\n'
+                f'NPWP: {npwp or "-"}'
+            )
+
+            reply = QMessageBox.question(self, 'Konfirmasi Data Customer', 
+                                         confirmation_message, 
+                                         QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+
+            if reply != QMessageBox.StandardButton.Yes:
+                return
+
             cursor.execute("""
                 INSERT INTO customers (nama, nik, tempat_tanggal_lahir, alamat, no_telp, npwp)
                         VALUES (?, ?, ?, ?, ?, ?)
@@ -76,6 +109,7 @@ class CustomerForm(QWidget):
                 (name, nik, ttl, alamat, no_telp, npwp or None))
             conn.commit()
             conn.close()
+
             QMessageBox.information(self, 'Sukses', 'Data pelanggan berhasil disimpan')
             self.clear_fields()
         except Exception as e:

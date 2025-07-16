@@ -5,13 +5,13 @@ import sys
 from ui.customer_form import CustomerForm
 from ui.purchase_form import PurchaseForm
 from ui.search_history import SearchHistory
+from ui.customer_list import CustomerList
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Aplikasi Money Exchange')
-        self.setMinimumSize(800, 600)
-        self.showFullScreen()
+        self.setMinimumSize(900, 600)
 
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
@@ -33,16 +33,20 @@ class MainWindow(QMainWindow):
         self.history_btn = QPushButton('Cari Riwayat Transaksi')
         self.history_btn.clicked.connect(self.show_search_form)
 
+        self.customer_list_btn = QPushButton('Lihat Daftar Customer')
+        self.customer_list_btn.clicked.connect(self.show_customer_list)
+
         self.quit_btn = QPushButton('Keluar')
         self.quit_btn.clicked.connect(self.close)
 
-        for btn in [self.customer_btn, self.purchase_btn, self.history_btn, self.quit_btn]:
+        for btn in [self.customer_btn, self.purchase_btn,self.customer_list_btn, self.history_btn, self.quit_btn]:
             btn.setStyleSheet('padding: 10px; font-size: 18px')
         
         self.menu_layout.addWidget(self.label)
         self.menu_layout.addWidget(self.customer_btn)
         self.menu_layout.addWidget(self.purchase_btn)
         self.menu_layout.addWidget(self.history_btn)
+        self.menu_layout.addWidget(self.customer_list_btn)
         self.menu_layout.addStretch()
         self.menu_layout.addWidget(self.quit_btn)
         self.menu_widget.setLayout(self.menu_layout)
@@ -50,15 +54,18 @@ class MainWindow(QMainWindow):
         self.customer_form = CustomerForm()
         self.purchase_form = PurchaseForm()
         self.search_form = SearchHistory()
+        self.customer_list = CustomerList(self.go_to_menu)
 
         self.add_back_button(self.customer_form)
         self.add_back_button(self.purchase_form)
         self.add_back_button(self.search_form)
+        self.add_back_button(self.customer_list)
 
         self.stack.addWidget(self.menu_widget)
         self.stack.addWidget(self.customer_form)
         self.stack.addWidget(self.purchase_form)
         self.stack.addWidget(self.search_form)
+        self.stack.addWidget(self.customer_list)
 
         main_layout = QVBoxLayout()
         main_layout.addWidget(self.stack)
@@ -81,9 +88,21 @@ class MainWindow(QMainWindow):
     def show_search_form(self):
         self.stack.setCurrentWidget(self.search_form)
     
+    def show_customer_list(self):
+        self.stack.setCurrentWidget(self.customer_list)
+    
     def go_to_menu(self):
+        if self.stack.currentWidget() == self.customer_form:
+            self.customer_form.clear_fields()
+        elif self.stack.currentWidget() == self.purchase_form:
+            self.purchase_form.clear_fields()
+        elif self.stack.currentWidget() == self.search_form:
+            self.search_form.clear_fields()
+        elif self.stack.currentWidget() == self.customer_list:
+            self.customer_list.clear_fields()
+
         self.stack.setCurrentWidget(self.menu_widget)
-        
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
