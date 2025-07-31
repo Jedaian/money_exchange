@@ -1,4 +1,0 @@
-([('main',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/dist/main',
-   'EXECUTABLE')],)

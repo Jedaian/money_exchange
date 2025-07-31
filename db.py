@@ -1,14 +1,14 @@
-import sqlite3
 import os
+import sqlite3
+from pathlib import Path
 
 def get_db_path():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    db_dir = os.path.join(base_dir, 'db')
-    
-    if not os.path.exists(db_dir):
-        os.makedirs(db_dir)
-    
-    return os.path.join(db_dir, 'database.db')
+    # Cross-platform user data folder (e.g., ~/.money_exchange or AppData)
+    app_dir = Path.home() / '.money_exchange'
+    print(f"Expected app_dir: {app_dir}")  # 🐛 Debug line
+    app_dir.mkdir(parents=True, exist_ok=True)
+    return str(app_dir / 'database.db')
+
 
 
 def init_db_if_not_exists():
