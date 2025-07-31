@@ -5,6 +5,7 @@ import os
 import sys
 
 from utils import resource_path
+from db import init_db_if_not_exists
 from ui.customer_form import CustomerForm
 from ui.purchase_form import PurchaseForm
 from ui.search_history import SearchHistory
@@ -103,6 +104,7 @@ class MainWindow(QMainWindow):
         self.stack.setCurrentWidget(self.menu_widget)
 
 if __name__ == '__main__':
+    init_db_if_not_exists()
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()

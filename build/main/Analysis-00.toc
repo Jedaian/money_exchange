@@ -15,10 +15,7 @@
  {},
  0,
  [],
- [('db/database.db',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/db/database.db',
-   'DATA')],
+ [],
  '3.9.6 (default, Mar 12 2025, 20:22:46) \n[Clang 17.0.0 (clang-1700.0.13.3)]',
  [('pyi_rth_pyqt6',
    '/Users/jedai/Desktop/Programming '
@@ -293,11 +290,11 @@
   ('tracemalloc',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/tracemalloc.py',
    'PYMODULE'),
-  ('stringprep',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stringprep.py',
    'PYMODULE'),
   ('ui.customer_list',
    '/Users/jedai/Desktop/Programming '
@@ -307,18 +304,6 @@
   ('ui.customer_edit',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/ui/customer_edit.py',
-   'PYMODULE'),
-  ('db',
-   '/Users/jedai/Desktop/Programming Languages/Python/money_exchange_app/db.py',
-   'PYMODULE'),
-  ('sqlite3',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/__init__.py',
-   'PYMODULE'),
-  ('sqlite3.dump',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/dump.py',
-   'PYMODULE'),
-  ('sqlite3.dbapi2',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/dbapi2.py',
    'PYMODULE'),
   ('ui.search_history',
    '/Users/jedai/Desktop/Programming '
@@ -331,6 +316,18 @@
   ('ui.customer_form',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/ui/customer_form.py',
+   'PYMODULE'),
+  ('db',
+   '/Users/jedai/Desktop/Programming Languages/Python/money_exchange_app/db.py',
+   'PYMODULE'),
+  ('sqlite3',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/__init__.py',
+   'PYMODULE'),
+  ('sqlite3.dump',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/dump.py',
+   'PYMODULE'),
+  ('sqlite3.dbapi2',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sqlite3/dbapi2.py',
    'PYMODULE'),
   ('utils',
    '/Users/jedai/Desktop/Programming '
@@ -349,9 +346,33 @@
  [('Python3.framework/Versions/3.9/Python3',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Python3',
    'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqicns.dylib',
+  ('PyQt6/Qt6/plugins/platforms/libqminimal.dylib',
    '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqicns.dylib',
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/platforms/libqminimal.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqgif.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqgif.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqmacheif.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqmacheif.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqtga.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqtga.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqjpeg.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqjpeg.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqwbmp.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqwbmp.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqpdf.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqpdf.dylib',
    'BINARY'),
   ('PyQt6/Qt6/plugins/imageformats/libqtiff.dylib',
    '/Users/jedai/Desktop/Programming '
@@ -361,41 +382,29 @@
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqsvg.dylib',
    'BINARY'),
-  ('PyQt6/Qt6/plugins/platforms/libqminimal.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/platforms/libqminimal.dylib',
-   'BINARY'),
   ('PyQt6/Qt6/plugins/iconengines/libqsvgicon.dylib',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/iconengines/libqsvgicon.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqwebp.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqwebp.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqtga.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqtga.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqgif.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqgif.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqpdf.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqpdf.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/platforms/libqoffscreen.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/platforms/libqoffscreen.dylib',
    'BINARY'),
   ('PyQt6/Qt6/plugins/platforms/libqcocoa.dylib',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/platforms/libqcocoa.dylib',
    'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqwbmp.dylib',
+  ('PyQt6/Qt6/plugins/imageformats/libqwebp.dylib',
    '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqwbmp.dylib',
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqwebp.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/imageformats/libqicns.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqicns.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/platforms/libqoffscreen.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/platforms/libqoffscreen.dylib',
+   'BINARY'),
+  ('PyQt6/Qt6/plugins/generic/libqtuiotouchplugin.dylib',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/generic/libqtuiotouchplugin.dylib',
    'BINARY'),
   ('PyQt6/Qt6/plugins/imageformats/libqmacjp2.dylib',
    '/Users/jedai/Desktop/Programming '
@@ -404,18 +413,6 @@
   ('PyQt6/Qt6/plugins/imageformats/libqico.dylib',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqico.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqjpeg.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqjpeg.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/imageformats/libqmacheif.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/imageformats/libqmacheif.dylib',
-   'BINARY'),
-  ('PyQt6/Qt6/plugins/generic/libqtuiotouchplugin.dylib',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/plugins/generic/libqtuiotouchplugin.dylib',
    'BINARY'),
   ('PyQt6/Qt6/plugins/styles/libqmacstyle.dylib',
    '/Users/jedai/Desktop/Programming '
@@ -505,9 +502,6 @@
   ('lib-dynload/_opcode.cpython-39-darwin.so',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_opcode.cpython-39-darwin.so',
    'EXTENSION'),
-  ('lib-dynload/_heapq.cpython-39-darwin.so',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_heapq.cpython-39-darwin.so',
-   'EXTENSION'),
   ('lib-dynload/_multibytecodec.cpython-39-darwin.so',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_multibytecodec.cpython-39-darwin.so',
    'EXTENSION'),
@@ -528,6 +522,9 @@
    'EXTENSION'),
   ('lib-dynload/_codecs_hk.cpython-39-darwin.so',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_hk.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_heapq.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_heapq.cpython-39-darwin.so',
    'EXTENSION'),
   ('lib-dynload/_sqlite3.cpython-39-darwin.so',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sqlite3.cpython-39-darwin.so',
@@ -555,21 +552,21 @@
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/QtWidgets.abi3.so',
    'EXTENSION'),
-  ('PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore',
-   'BINARY'),
   ('PyQt6/Qt6/lib/QtGui.framework/Versions/A/QtGui',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtGui.framework/Versions/A/QtGui',
    'BINARY'),
-  ('PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg',
+  ('PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore',
    '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg',
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore',
    'BINARY'),
   ('PyQt6/Qt6/lib/QtPdf.framework/Versions/A/QtPdf',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtPdf.framework/Versions/A/QtPdf',
+   'BINARY'),
+  ('PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg',
    'BINARY'),
   ('PyQt6/Qt6/lib/QtNetwork.framework/Versions/A/QtNetwork',
    '/Users/jedai/Desktop/Programming '
@@ -585,369 +582,169 @@
    'BINARY')],
  [],
  [],
- [('db/database.db',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/db/database.db',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_it.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_it.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ka.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ka.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_da.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_da.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_lv.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_lv.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ka.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ka.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ka.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ka.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_nn.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_nn.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_hr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_hr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_pt_BR.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_pt_BR.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_fr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_es.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_es.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_cs.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_cs.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_fr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_lv.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_lv.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_zh_TW.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_zh_TW.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ru.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ru.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_sv.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_sv.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_uk.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_uk.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ja.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ja.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_hu.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_hu.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_hr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_hr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_en.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_en.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_fi.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fi.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_de.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_de.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ru.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ru.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ko.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ko.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ru.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ru.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_gd.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_gd.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ca.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ca.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_nn.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_nn.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_gl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_gl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ko.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ko.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ko.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ko.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_zh_TW.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_zh_TW.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_bg.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_bg.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ca.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ca.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_hr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_hr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_cs.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_cs.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_da.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_da.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_sk.qm',
+ [('PyQt6/Qt6/translations/qt_help_sk.qm',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_sk.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ar.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ar.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_zh_TW.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_zh_TW.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_fr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_fr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_gl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_gl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_de.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_de.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_en.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_en.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_bg.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_bg.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_uk.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_uk.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_tr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_tr.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_pt_BR.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_pt_BR.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_nl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_nl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_pl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_fi.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fi.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_en.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_en.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_zh_CN.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_zh_CN.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_ja.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ja.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_sk.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_sk.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ar.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ar.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_es.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_es.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_lt.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_lt.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_fa.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fa.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_zh_CN.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_zh_CN.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_hu.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_hu.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_zh_CN.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_zh_CN.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_it.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_it.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_fa.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fa.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_es.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_es.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_da.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_da.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_de.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_de.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_uk.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_uk.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_nl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_nl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_pt_BR.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pt_BR.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_sl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_sl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_nl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_nl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_gd.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_gd.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_pl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_pl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_nn.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_nn.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ja.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ja.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_it.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_it.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_pt_PT.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pt_PT.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_ar.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ar.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_ca.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ca.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_he.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_he.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_sl.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_sl.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_he.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_he.qm',
-   'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_tr.qm',
-   '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_tr.qm',
    'DATA'),
   ('PyQt6/Qt6/translations/qt_tr.qm',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_tr.qm',
    'DATA'),
-  ('PyQt6/Qt6/translations/qt_help_pl.qm',
+  ('PyQt6/Qt6/translations/qt_help_ar.qm',
    '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_pl.qm',
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ar.qm',
    'DATA'),
-  ('PyQt6/Qt6/translations/qtbase_hu.qm',
+  ('PyQt6/Qt6/translations/qt_help_de.qm',
    '/Users/jedai/Desktop/Programming '
-   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_hu.qm',
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_de.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_es.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_es.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_pt_BR.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pt_BR.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_uk.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_uk.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ru.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ru.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_zh_TW.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ca.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ca.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_sv.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_sv.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_es.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_es.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ka.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ka.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_pl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_fr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_fr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_nn.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_nn.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ar.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ar.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_fi.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fi.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_pt_BR.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_pt_BR.qm',
    'DATA'),
   ('PyQt6/Qt6/translations/qt_sk.qm',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_sk.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_uk.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_uk.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_fa.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fa.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ca.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ca.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_fr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_fr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_da.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_da.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_gl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_gl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ko.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ko.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_ru.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ru.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_nn.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_nn.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_fa.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fa.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_gd.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_gd.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_pt_PT.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_pt_PT.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_uk.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_uk.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_nl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_nl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_lv.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_lv.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_tr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_tr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_en.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_en.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_it.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_it.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_he.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_he.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_hr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_hr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_hr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_hr.qm',
    'DATA'),
   ('PyQt6/Qt6/translations/qtbase_cs.qm',
    '/Users/jedai/Desktop/Programming '
@@ -957,15 +754,211 @@
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_bg.qm',
    'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_ja.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ja.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_zh_CN.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_zh_CN.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ru.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ru.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_es.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_es.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_nl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_nl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_nn.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_nn.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_da.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_da.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_ka.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ka.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_sl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_sl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_zh_CN.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_zh_CN.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ja.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ja.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_gd.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_gd.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_pl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_pl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_hu.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_hu.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_hu.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_hu.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_sl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_sl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_hr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_hr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_tr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_tr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_zh_TW.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_lt.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_lt.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_en.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_en.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_gl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_gl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_sk.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_sk.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ko.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ko.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_it.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_it.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_de.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_de.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_cs.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_cs.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_zh_CN.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ar.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ar.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_bg.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_bg.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_ko.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ko.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_ja.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_ja.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_cs.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_cs.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_da.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_da.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_it.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_it.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_nl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_nl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_fr.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fr.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_ka.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_ka.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_en.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_en.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_bg.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_bg.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_zh_TW.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_pl.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_pl.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_pt_BR.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_pt_BR.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_fi.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_fi.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qtbase_lv.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qtbase_lv.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_ca.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_ca.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_he.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_he.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_help_hu.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_help_hu.qm',
+   'DATA'),
+  ('PyQt6/Qt6/translations/qt_de.qm',
+   '/Users/jedai/Desktop/Programming '
+   'Languages/Python/money_exchange_app/venv/lib/python3.9/site-packages/PyQt6/Qt6/translations/qt_de.qm',
+   'DATA'),
   ('Python3', 'Python3.framework/Versions/3.9/Python3', 'SYMLINK'),
   ('base_library.zip',
    '/Users/jedai/Desktop/Programming '
    'Languages/Python/money_exchange_app/build/main/base_library.zip',
    'DATA'),
-  ('QtCore', 'PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore', 'SYMLINK'),
   ('QtGui', 'PyQt6/Qt6/lib/QtGui.framework/Versions/A/QtGui', 'SYMLINK'),
-  ('QtSvg', 'PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg', 'SYMLINK'),
+  ('QtCore', 'PyQt6/Qt6/lib/QtCore.framework/Versions/A/QtCore', 'SYMLINK'),
   ('QtPdf', 'PyQt6/Qt6/lib/QtPdf.framework/Versions/A/QtPdf', 'SYMLINK'),
+  ('QtSvg', 'PyQt6/Qt6/lib/QtSvg.framework/Versions/A/QtSvg', 'SYMLINK'),
   ('QtNetwork',
    'PyQt6/Qt6/lib/QtNetwork.framework/Versions/A/QtNetwork',
    'SYMLINK'),
@@ -1050,20 +1043,68 @@
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Info.plist',
    'DATA'),
   ('Python3.framework/Versions/Current', '3.9', 'SYMLINK')],
- [('io',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py',
+ [('_collections_abc',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_collections_abc.py',
    'PYMODULE'),
-  ('operator',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/operator.py',
+  ('sre_compile',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_compile.py',
+   'PYMODULE'),
+  ('sre_constants',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_constants.py',
    'PYMODULE'),
   ('warnings',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/warnings.py',
    'PYMODULE'),
-  ('genericpath',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py',
+  ('posixpath',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/posixpath.py',
    'PYMODULE'),
-  ('heapq',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/heapq.py',
+  ('enum',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/enum.py',
+   'PYMODULE'),
+  ('io',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py',
+   'PYMODULE'),
+  ('sre_parse',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_parse.py',
+   'PYMODULE'),
+  ('ntpath',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ntpath.py',
+   'PYMODULE'),
+  ('types',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/types.py',
+   'PYMODULE'),
+  ('reprlib',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/reprlib.py',
+   'PYMODULE'),
+  ('abc',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/abc.py',
+   'PYMODULE'),
+  ('keyword',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/keyword.py',
+   'PYMODULE'),
+  ('codecs',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/codecs.py',
+   'PYMODULE'),
+  ('stat',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stat.py',
+   'PYMODULE'),
+  ('re',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.py',
+   'PYMODULE'),
+  ('operator',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/operator.py',
+   'PYMODULE'),
+  ('functools',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/functools.py',
+   'PYMODULE'),
+  ('collections.abc',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/abc.py',
+   'PYMODULE'),
+  ('collections',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/__init__.py',
+   'PYMODULE'),
+  ('weakref',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/weakref.py',
    'PYMODULE'),
   ('encodings.zlib_codec',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/zlib_codec.py',
@@ -1431,77 +1472,29 @@
   ('encodings',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/__init__.py',
    'PYMODULE'),
-  ('sre_compile',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_compile.py',
-   'PYMODULE'),
-  ('weakref',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/weakref.py',
-   'PYMODULE'),
-  ('sre_parse',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_parse.py',
-   'PYMODULE'),
-  ('collections.abc',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/abc.py',
-   'PYMODULE'),
-  ('collections',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/__init__.py',
-   'PYMODULE'),
-  ('re',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.py',
-   'PYMODULE'),
-  ('codecs',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/codecs.py',
-   'PYMODULE'),
-  ('_collections_abc',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_collections_abc.py',
-   'PYMODULE'),
-  ('stat',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stat.py',
-   'PYMODULE'),
-  ('_weakrefset',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_weakrefset.py',
-   'PYMODULE'),
-  ('ntpath',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ntpath.py',
-   'PYMODULE'),
-  ('_bootlocale',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_bootlocale.py',
-   'PYMODULE'),
-  ('traceback',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.py',
-   'PYMODULE'),
-  ('copyreg',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/copyreg.py',
-   'PYMODULE'),
-  ('posixpath',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/posixpath.py',
-   'PYMODULE'),
-  ('reprlib',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/reprlib.py',
-   'PYMODULE'),
-  ('abc',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/abc.py',
-   'PYMODULE'),
   ('locale',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/locale.py',
-   'PYMODULE'),
-  ('sre_constants',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_constants.py',
-   'PYMODULE'),
-  ('types',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/types.py',
-   'PYMODULE'),
-  ('functools',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/functools.py',
    'PYMODULE'),
   ('linecache',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/linecache.py',
    'PYMODULE'),
-  ('keyword',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/keyword.py',
+  ('traceback',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.py',
    'PYMODULE'),
-  ('enum',
-   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/enum.py',
+  ('genericpath',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py',
+   'PYMODULE'),
+  ('heapq',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/heapq.py',
+   'PYMODULE'),
+  ('_bootlocale',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_bootlocale.py',
+   'PYMODULE'),
+  ('_weakrefset',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_weakrefset.py',
+   'PYMODULE'),
+  ('copyreg',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/copyreg.py',
    'PYMODULE'),
   ('os',
    '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py',
