@@ -2,10 +2,14 @@ import sqlite3
 import os
 
 def get_db_path():
-    # This should be the relative path inside the packaged .exe or source project
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    db_path = os.path.join(base_dir, 'db', 'database.db')
-    return db_path
+    db_dir = os.path.join(base_dir, 'db')
+    
+    if not os.path.exists(db_dir):
+        os.makedirs(db_dir)
+    
+    return os.path.join(db_dir, 'database.db')
+
 
 def init_db_if_not_exists():
     db_path = get_db_path()
